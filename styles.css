@@ -70,6 +70,7 @@ html {
   gap: 1.6rem;
 }
 .btn {
+  display: inline-block;
   padding: 2rem 4rem;
   border-radius: 100px;
   border: none;
@@ -92,8 +93,12 @@ html {
 }
 
 /* media queries selector */
-/* @media (max-width: 372px) {
-} */
+@media (min-width: 600px) {
+  .btn-container {
+    flex-direction: row;
+    gap: 1.6rem;
+  }
+}
 
 @media (max-width: 1000px) {
   /* .btn {
@@ -133,9 +138,4 @@ html {
     display: block;
     display: block;
   }
-  .btn-container {
-    flex-direction: row;
-    gap: 1.6rem;
-  }
 }
- 
