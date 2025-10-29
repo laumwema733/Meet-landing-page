@@ -10,59 +10,134 @@
       sizes="32x32"
       href="assets/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Meet landing page</title>
   </head>
   <body>
-    <header>
+    <!-- Primary site header with branding -->
+    <header class="site-header" aria-label="Site header">
       <div class="brand" aria-label="site branding">
-        <img src="/assets/logo.svg" alt="logo" />
+        <img src="/assets/logo.svg" alt="Meet logo" />
       </div>
-      <section class="section__hero">
-        <div class="hero__photo">
-          <img
-            src="/assets/tablet/image-hero.png"
-            alt="hero photo"
-            class="tablet--hero--img"
-          />
-        </div>
-        <img
-          src="/assets/desktop/image-hero-left.png"
-          alt="hero left image"
-          class="hero__left--img"
-        />
-        <img
-          src="/assets/desktop/image-hero-right.png"
-          alt="hero left image"
-          class="hero__right--img"
-        />
+      <!-- If you have a navigation, place it here -->
+      <!-- <nav aria-label="Primary navigation"> ... </nav> -->
+    </header>
 
-        <div class="hero__content--box">
-          <div class="hero__content">
-            <h1 class="primary-heading">Group chat for every one</h1>
-            <p class="hero__text--box">
-              Meet makes it easy to connect with others face-to-face virtually
-              and collaborate across device
-            </p>
-          </div>
-          <div class="btn-container">
-            <button class="btn btn__primary">Download v1.3</button
-            ><button class="btn btn__secondary">What is it?</button>
-          </div>
+    <!-- Hero section with content and imagery -->
+    <div class="section-table">
+      <div class="hero-photo" aria-label="Hero photo group">
+        <img
+          src="/assets/tablet/image-hero.png"
+          alt="Illustration showing a group collaborating on a tablet"
+          class="tablet--hero--img"
+        />
+      </div>
+    </div>
+    <section class="section-hero" aria-label="Hero section">
+      <img
+        src="/assets/desktop/image-hero-left.png"
+        alt="Decorative left hero image"
+        class="hero__left--img"
+        aria-label="Left decorative image"
+      />
+      <img
+        src="/assets/desktop/image-hero-right.png"
+        alt="Decorative right hero image"
+        class="hero__right--img"
+        aria-label="Right decorative image"
+      />
+
+      <div class="hero__content--box" aria-label="Hero content box">
+        <header class="hero__content" aria-label="Hero heading and description">
+          <h1 class="primary-heading">Group chat for every one</h1>
+          <p class="text--box">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across devices.
+          </p>
+        </header>
+
+        <div class="btn-container">
+          <button class="btn btn__primary" type="button">Download v1.3</button>
+          <button class="btn btn__secondary" type="button">What is it?</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main content area -->
+    <main class="main-content" role="main" aria-label="Main content">
+      <section class="main-container" aria-labelledby="gallery-title">
+        <div class="separate--block" aria-hidden="true">
+          <div class="circle" aria-label="section number 01">01</div>
+        </div>
+
+        <!-- Gallery with images representing features -->
+        <figure class="gallery" aria-label="Gallery of team images">
+          <img
+            src="/assets/desktop/image-woman-in-videocall.jpg"
+            alt="Woman participating in a video call"
+          />
+          <img
+            src="/assets/desktop/image-women-videochatting.jpg"
+            alt="Group of women video chatting"
+          />
+          <img
+            src="/assets/desktop/image-men-in-meeting.jpg"
+            alt="Man in a business meeting"
+          />
+          <img
+            src="/assets/desktop/image-man-texting.jpg"
+            alt="Person texting on a smartphone"
+          />
+        </figure>
+
+        <!-- Informational text block -->
+        <article
+          id="gallery-title"
+          class="page--content"
+          aria-labelledby="section01-title"
+        >
+          <small
+            id="section01-title"
+            class="sub-title"
+            aria-label="Built for modern use"
+          >
+            Built for modern use
+          </small>
+          <h2 class="secondary-heading" id="gallery-title-heading">
+            Smarter meetings, all in one place
+          </h2>
+          <p class="text--box" aria-label="Description for smarter meetings">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export. 02
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer__section" aria-label="Site footer">
+      <div class="separate--block footer__separator--block" aria-hidden="true">
+        <div class="circle different">02</div>
+      </div>
+
+      <section
+        class="page--content footer__content"
+        aria-labelledby="footer-cta-title"
+      >
+        <h2 id="footer-cta-title" class="secondary-heading">
+          Experience more together
+        </h2>
+        <p class="text--box">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+
+        <div class="footer__btn">
+          <button class="btn btn__secondary" type="button">
+            Download v1.3
+          </button>
         </div>
       </section>
-    </header>
-    <main id="main-content" class="container" role="main">
-      <div class="container">
-        <!-- Meet makes it easy to connect with others face-to-face virtually and
-        collaborate across any device. Download v1.3 What is it? 01 Built for
-        modern use Smarter meetings, all in one place Send messages, share
-        files, show your screen, and record your meetings — all in one
-        workspace. Control who can join with invite-only team access, data
-        encryption, and data export. 02 Experience more together Stay connected
-        with reliable HD meetings and unlimited one-on-one and group video
-        sessions. Download v1.3 -->
-      </div>
-    </main>
+    </footer>
   </body>
 </html>
