@@ -55,6 +55,7 @@ header {
 }
 .section-hero {
   margin: 6.8rem auto;
+  margin-bottom: 0;
 }
 .hero__content {
   margin-bottom: 3.2rem;
