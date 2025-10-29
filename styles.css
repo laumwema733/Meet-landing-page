@@ -147,6 +147,7 @@ header {
   border-radius: 100%;
   position: relative;
   font-size: var(--font-size);
+  font-weight: 900;
 }
 .circle::before {
   content: '';
