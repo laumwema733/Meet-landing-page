@@ -16,7 +16,7 @@
   --secondary-heading: clamp(3.4rem, calc(2.6vw + 1.4rem), 4rem);
   --secondary-heading-font-weight: 900;
   --footer-background-image-mobile: linear-gradient(rgba(28, 114, 135, 0.8)),
-    url(/assets/mobile/image-footer.jpg);
+    url(assets/mobile/image-footer.jpg);
 }
 *,
 ::after,
@@ -227,7 +227,7 @@ header {
   }
   .footer__section {
     background-image: linear-gradient(rgba(28, 114, 135, 0.8)),
-      url(/assets/tablet/image-footer.jpg);
+      url(assets/tablet/image-footer.jpg);
     background-size: cover;
   }
 }
@@ -283,7 +283,7 @@ header {
         rgba(28, 114, 135, 0.8),
         rgba(28, 114, 135, 0.8)
       ),
-      url(/assets/desktop/image-footer.jpg);
+      url(assets/desktop/image-footer.jpg);
     background-size: cover;
   }
   .footer__content {
