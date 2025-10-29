@@ -54,7 +54,6 @@ header {
   margin: 4.8rem auto;
 }
 .section-hero {
-  max-width: 164rem;
   margin: 6.8rem auto;
 }
 .hero__content {
@@ -184,7 +183,6 @@ header {
   padding-inline: 3.2rem;
   color: var(--color-white);
   padding-bottom: 0;
-  max-width: 164rem;
   margin: 0 auto;
 
   background-image: var(--footer-background-image-mobile);
@@ -255,7 +253,6 @@ header {
   .section-hero {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     align-items: center;
     justify-content: space-between;
   }
@@ -293,9 +290,6 @@ header {
     margin-inline: auto;
     justify-content: center;
     padding-block: 11.2rem;
-    
-   
-    
   }
   .footer__section .secondary-heading,
   .footer__section .text--box {
